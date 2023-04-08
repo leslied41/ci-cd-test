@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -14,14 +13,17 @@
   "devDependencies": {
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2",
-    "husky": "^8.0.0",
+    "eslint-plugin-import": "^2.25.2"
+  },
+  "dependencies": {
+    "husky": "^8.0.3",
     "lint-staged": "12.3.2",
     "prettier": "^2.8.7"
   },
-  "dependencies": {},
   "lint-staged": {
-    "*.js": "prettier --write",
-    "*": "eslint"
+    "*.js": [
+      "prettier --write",
+      "eslint"
+    ]
   }
 }
