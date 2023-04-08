@@ -1,29 +1,32 @@
 {
-  "name": "ci-cd",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.32.0 || ^8.2.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2"
-  },
-  "dependencies": {
-    "husky": "^8.0.3",
-    "lint-staged": "12.3.2",
-    "prettier": "^2.8.7"
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint"
-    ]
-  }
+    "name": "ci-cd",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.32.0 || ^8.2.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.3",
+        "lint-staged": "12.3.2",
+        "prettier": "^2.8.7"
+    },
+    "dependencies": {},
+    "lint-staged": {
+        "*.js": [
+            "eslint --fix",
+            "eslint",
+            "prettier --write"
+        ]
+    }
 }
