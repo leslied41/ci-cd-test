@@ -1,15 +1,14 @@
 {
     "name": "ci-cd",
     "version": "1.0.0",
-    "description": "",
+    "description": "CI/CD test",
     "main": "index.js",
     "scripts": {
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
-    "author": "",
+    "author": "Leslie",
     "license": "ISC",
     "devDependencies": {
         "eslint": "^7.32.0 || ^8.2.0",
