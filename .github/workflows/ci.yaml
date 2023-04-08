@@ -7,9 +7,7 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v2
-
             - name: Install packages
               run: yarn
-
             - name: Run Eslint
               run: yarn lint
