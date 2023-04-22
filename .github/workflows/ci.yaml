@@ -11,3 +11,12 @@ jobs:
               run: yarn
             - name: Run Eslint
               run: yarn lint
+#it is to create actions in github workflow, when push
+#this action will be triggerd, and the jobs run on the
+#virtual machine ubuntu-latest. the steps include Checkout code,
+#Install packages and Run Eslint.
+
+#everytime you git push, this action will run. and you can set rule
+#for a certain branch by add this action to the rule and then this
+#protectd branch will need to pass the action before the codes can be
+#merged into.

@@ -13,5 +13,6 @@ module.exports = {
         quotes: ["error", "double"],
         "no-console": "off",
         "implicit-arrow-linebreak": "off",
+        "import/extensions": ["off"],
     },
 }
